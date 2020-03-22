@@ -1,0 +1,10 @@
+~ $ cat .gitignore
+# ignore everything
+*
+
+# except these
+!.bashrc
+!.gitignore
+!.vimrc
+!.gitconfig
+!.tmux.conf
