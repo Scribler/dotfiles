@@ -3,3 +3,4 @@
 	email = steven.mc2225@gmail.com
 [core]
 	editor = vim
+	excludesfile = /Users/stevenmcintyre/programming/.gitignore
