@@ -6,6 +6,11 @@ call plug#begin('~/.vim/plugged')
 "On Demand Loading
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 
+"AutoClosing
+Plug 'alvan/vim-closetag'
+Plug 'jiangmiao/auto-pairs'
+
+
 call plug#end()
 "---------------------------------------------------------------------------
 "KEY REMAPS
