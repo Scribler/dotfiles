@@ -6,15 +6,18 @@ call plug#begin('~/.vim/plugged')
 "On Demand Loading
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 
-"AutoClosing
+"Auto Closing
 Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
 
+"Comment Lines
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 "---------------------------------------------------------------------------
 "KEY REMAPS
 inoremap kj <Esc>
+let mapleader = ","
 
 "KEY REMAPS END
 "---------------------------------------------------------------------------
@@ -23,9 +26,9 @@ inoremap kj <Esc>
 "STRANGE FIXES
 
 "Allow plugins?
-"set nocompatible
-"filetype plugin on
-"runtime macros/machit.vim
+set nocompatible
+filetype plugin on
+runtime macros/machit.vim
 
 "Turn on Backspace (not activated by default.)
 set bs=2
@@ -50,6 +53,34 @@ set display+=lastline
 
 "---------------------------------------------------------------------------
 "GENERAL CUSTOMIZATIONS
+"START - Modifications for nerdcommenter plugin
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/'  }  }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
+"END - Modifications for nerdcommenter plugin
+
 "Set linewrap so that it doesn't split words.
 set wrap linebreak nolist
 
