@@ -16,7 +16,7 @@ Plug 'preservim/nerdcommenter'
 call plug#end()
 "---------------------------------------------------------------------------
 "KEY REMAPS
-inoremap kj <Esc>
+inoremap jj <Esc>
 let mapleader = ","
 
 "KEY REMAPS END
