@@ -25,7 +25,8 @@ Plug 'powerline/powerline'
 Plug 'powerline/fonts'
 
 "airline symbols
-" let g:airline_powerline_fonts
+let g:airline_powerline_fonts = 1
+set encoding=utf-8
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
