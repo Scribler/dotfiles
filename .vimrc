@@ -79,6 +79,12 @@ call plug#end()
 inoremap kj <Esc>
 let mapleader = ","
 
+"Copy and Paste from system clipboard
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
+
 "KEY REMAPS END
 "---------------------------------------------------------------------------
 
