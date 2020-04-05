@@ -1,3 +1,7 @@
+"unbind space and remap it to mapleader
+let mapleader = " "
+
+
 "--------------------------------------------------------------------------
 "VIM PLUG
 "specify a directory for pluggins
@@ -23,6 +27,13 @@ Plug 'vim-airline/vim-airline-themes'
 "Powerline/ Powerline fonts 
 Plug 'powerline/powerline'
 Plug 'powerline/fonts'
+
+"Taboo - rename your tabs! (disabled due to conflict with airline)
+" Plug 'gcmt/taboo.vim'
+" set sessionoptions+=tabpages,globals
+" set guioptions-=e
+
+"End VIMPLUG
 
 "airline symbols
 let g:airline_powerline_fonts = 1
@@ -77,7 +88,7 @@ call plug#end()
 "---------------------------------------------------------------------------
 "KEY REMAPS
 inoremap kj <Esc>
-let mapleader = ","
+
 " Go to tab by number
 noremap <leader>1 1gt
 noremap <leader>2 2gt
