@@ -146,6 +146,10 @@ set display+=lastline
 
 "---------------------------------------------------------------------------
 "GENERAL CUSTOMIZATIONS
+"
+"DEFAULT-COLORSCHEME
+colorscheme delek
+
 "START - Modifications for nerdcommenter plugin
 
 " Add spaces after comment delimiters by default
