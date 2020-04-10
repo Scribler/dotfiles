@@ -87,7 +87,9 @@ if !exists('g:airline_symbols')
 call plug#end()
 "---------------------------------------------------------------------------
 "KEY REMAPS
-inoremap kj <Esc>
+"remaps esc to 'kj' and stops the cursor from going back one space when you
+"exit insert mode.
+inoremap <silent>  kj <Esc>`^
 
 " Go to tab by number
 noremap <leader>1 1gt
