@@ -28,6 +28,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'powerline/powerline'
 Plug 'powerline/fonts'
 
+"autoprefixer
+Plug 'vim-scripts/vim-autoprefixer'
+
 "Taboo - rename your tabs! (disabled due to conflict with airline)
 " Plug 'gcmt/taboo.vim'
 " set sessionoptions+=tabpages,globals
