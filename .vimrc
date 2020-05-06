@@ -137,12 +137,12 @@ set bs=2
 "SET TAB TO 4 SPACES
 filetype plugin indent on
 "show existing tab with 4 spaces width
-set tabstop=3
+set tabstop=4
 "when indenting with '>' use 4 spaces width
-set shiftwidth=3
+set shiftwidth=4
 "on pressing tab, insert 4 spaces
 set expandtab
-set softtabstop=3
+set softtabstop=4
 "Stop @@@@@@@ from displaying after long last line
 set display+=lastline
 
