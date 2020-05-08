@@ -1,4 +1,4 @@
-"unbind space and remap it to mapleader
+"nbind space and remap it to mapleader
 let mapleader = " "
 
 
@@ -134,15 +134,15 @@ set bs=2
 "Fix Visual Mode Highlighting.
 :highlight Visual cterm=reverse ctermbg=NONE
 
-"SET TAB TO 4 SPACES
+"SET TAB TO 2 SPACES
 filetype plugin indent on
-"show existing tab with 4 spaces width
-set tabstop=4
-"when indenting with '>' use 4 spaces width
-set shiftwidth=4
-"on pressing tab, insert 4 spaces
+"show existing tab with 2 spaces width
+set tabstop=2
+"when indenting with '>' use 2 spaces width
+set shiftwidth=2
+"on pressing tab, insert 2 spaces
 set expandtab
-set softtabstop=4
+set softtabstop=2
 "Stop @@@@@@@ from displaying after long last line
 set display+=lastline
 
