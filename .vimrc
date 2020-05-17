@@ -37,7 +37,7 @@ Plug 'vim-scripts/vim-autoprefixer'
 " set guioptions-=e
 
 "COLORSCHEMES
-Plug 'lifepillar/vim-solarized8'
+" Plug 'lifepillar/vim-solarized8'
 " Plug 'morhetz/gruvbox'
 " Plug 'tomasr/molokai'
 Plug 'flazz/vim-colorschemes'
@@ -160,9 +160,13 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-set background=dark
-colorscheme solarized8
+" FIXES FOR VIM COLORS
 
+" set background=dark
+" colorscheme solarized8
+if (has("termguicolors"))
+  set termguicolors
+endif
 "STRANGE FIXES END
 "---------------------------------------------------------------------------
 
@@ -170,7 +174,7 @@ colorscheme solarized8
 "GENERAL CUSTOMIZATIONS
 "
 "DEFAULT-COLORSCHEME
-colorscheme delek
+colorscheme OceanicNext
 
 "START - Modifications for nerdcommenter plugin
 
@@ -216,7 +220,11 @@ augroup END
 set autoindent
 
 "(3) Activate Syntax Highlighting.
+" if !exists("g:syntax_on")
+    " syntax enable
+" endif
 syntax on
+
 
 "(4) Jump between tags using '%' *note if on the bracket it will just jump to
 "the opposite bracket*
