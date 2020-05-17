@@ -46,6 +46,9 @@ Plug 'flazz/vim-colorschemes'
  Plug 'pangloss/vim-javascript'
 
 "End VIMPLUG
+call plug#end()
+
+
 
 "airline symbols
 let g:airline_powerline_fonts = 1
@@ -96,7 +99,6 @@ if !exists('g:airline_symbols')
   let g:airline_symbols.readonly = '⭤'
   let g:airline_symbols.linenr = '⭡'
 
-call plug#end()
 "---------------------------------------------------------------------------
 "KEY REMAPS
 "remaps esc to 'kj' and stops the cursor from going back one space when you
