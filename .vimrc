@@ -176,7 +176,7 @@ endif
 "GENERAL CUSTOMIZATIONS
 "
 "DEFAULT-COLORSCHEME
-colorscheme OceanicNext
+colorscheme gruvbox
 
 "START - Modifications for nerdcommenter plugin
 
