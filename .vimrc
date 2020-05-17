@@ -36,6 +36,15 @@ Plug 'vim-scripts/vim-autoprefixer'
 " set sessionoptions+=tabpages,globals
 " set guioptions-=e
 
+"COLORSCHEMES
+Plug 'lifepillar/vim-solarized8'
+" Plug 'morhetz/gruvbox'
+" Plug 'tomasr/molokai'
+Plug 'flazz/vim-colorschemes'
+
+"Better Javascript syntax highlighting
+ Plug 'pangloss/vim-javascript'
+
 "End VIMPLUG
 
 "airline symbols
@@ -145,6 +154,14 @@ set expandtab
 set softtabstop=2
 "Stop @@@@@@@ from displaying after long last line
 set display+=lastline
+
+"set Vim-specific sequences for RGB colors
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+set background=dark
+colorscheme solarized8
 
 "STRANGE FIXES END
 "---------------------------------------------------------------------------
