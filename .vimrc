@@ -128,6 +128,11 @@ noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
 
+"Set new splits down and to the right
+set splitbelow
+set splitright
+
+
 "KEY REMAPS END
 "---------------------------------------------------------------------------
 
