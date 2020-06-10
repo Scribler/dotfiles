@@ -45,7 +45,10 @@ Plug 'flazz/vim-colorschemes'
 "Better Javascript syntax highlighting
  Plug 'pangloss/vim-javascript'
 
-"End VIMPLUG
+"FTP stuff
+"?
+
+ "End VIMPLUG
 call plug#end()
 
 
@@ -174,6 +177,10 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 if (has("termguicolors"))
   set termguicolors
 endif
+
+"FTP stuff
+let g:netrw_ftp_cmd= "ftp -p"
+
 "STRANGE FIXES END
 "---------------------------------------------------------------------------
 
