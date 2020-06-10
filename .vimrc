@@ -179,6 +179,7 @@ if (has("termguicolors"))
 endif
 
 "FTP stuff
+"Activate ftp passive mode in vim
 let g:netrw_ftp_cmd= "ftp -p"
 
 "STRANGE FIXES END
