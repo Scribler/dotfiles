@@ -43,12 +43,21 @@ Plug 'vim-scripts/vim-autoprefixer'
 Plug 'flazz/vim-colorschemes'
 
 "Better Javascript syntax highlighting
- Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript'
 
 "FTP stuff
 "?
 
- "End VIMPLUG
+"Vim Color Picker
+Plug 'iandoe/vim-osx-colorpicker'
+let g:colorpicker_app = 'iTerm.app'
+
+"Vim CSS Color Highlighting
+Plug 'skammer/vim-css-color'
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+
+"End VIMPLUG
 call plug#end()
 
 
