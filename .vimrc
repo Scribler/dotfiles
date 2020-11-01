@@ -43,7 +43,13 @@ Plug 'vim-scripts/vim-autoprefixer'
 Plug 'flazz/vim-colorschemes'
 
 "Better Javascript syntax highlighting
-Plug 'pangloss/vim-javascript'
+" Plug 'pangloss/vim-javascript'
+
+"syntax highlighting and support for all languages
+Plug 'sheerun/vim-polyglot'
+
+"autocomplete
+Plug 'ajh17/VimCompletesMe'
 
 "FTP stuff
 "?
@@ -53,8 +59,8 @@ Plug 'iandoe/vim-osx-colorpicker'
 let g:colorpicker_app = 'iTerm.app'
 
 "Vim CSS Color Highlighting
-Plug 'skammer/vim-css-color'
-let g:cssColorVimDoNotMessMyUpdatetime = 1
+" Plug 'skammer/vim-css-color'
+" let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 
 "End VIMPLUG
@@ -174,18 +180,21 @@ set softtabstop=2
 "Stop @@@@@@@ from displaying after long last line
 set display+=lastline
 
+" FIXES FOR VIM COLORS
 "set Vim-specific sequences for RGB colors
+" set termguicolors
+
+set t_Co=256
+
+" set background=dark
+" if (has("termguicolors"))
 set termguicolors
+" in order to reactivate the two items below (delete the '\' character after
+" the equals sign')
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-" FIXES FOR VIM COLORS
-
-" set background=dark
-" colorscheme solarized8
-if (has("termguicolors"))
-  set termguicolors
-endif
+" endif
 
 "FTP stuff
 "Activate ftp passive mode in vim
