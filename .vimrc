@@ -150,6 +150,14 @@ noremap <Leader>P "+p
 set splitbelow
 set splitright
 
+"map F5 to reset highlighting
+" map <F5> :syntax sync fromstart<cr>
+"map f12 to reset highlighting
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
+"set redraw time longer to give time for syntax highlighting
+set redrawtime=10000
 
 "KEY REMAPS END
 "---------------------------------------------------------------------------
@@ -207,7 +215,8 @@ let g:netrw_ftp_cmd= "ftp -p"
 "GENERAL CUSTOMIZATIONS
 "
 "DEFAULT-COLORSCHEME
-colorscheme gruvbox
+" colorscheme neuromancer
+colorscheme made_of_code
 
 "START - Modifications for nerdcommenter plugin
 
