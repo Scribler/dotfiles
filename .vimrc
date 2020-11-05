@@ -215,8 +215,8 @@ let g:netrw_ftp_cmd= "ftp -p"
 "GENERAL CUSTOMIZATIONS
 "
 "DEFAULT-COLORSCHEME
-" colorscheme neuromancer
-colorscheme made_of_code
+colorscheme neuromancer
+" colorscheme made of code
 
 "START - Modifications for nerdcommenter plugin
 
