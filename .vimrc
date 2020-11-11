@@ -202,6 +202,10 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
+"Fix for mouse not working to resize windows
+set ttymouse=xterm2
+" set ttymouse=sgr
+
 " endif
 
 "FTP stuff
@@ -216,7 +220,7 @@ let g:netrw_ftp_cmd= "ftp -p"
 "
 "DEFAULT-COLORSCHEME
 colorscheme neuromancer
-" colorscheme made of code
+" colorscheme made_of_code-dark
 
 "START - Modifications for nerdcommenter plugin
 
@@ -267,6 +271,8 @@ set autoindent
 " endif
 syntax on
 
+" Allow Mouse
+set mouse=a
 
 "(4) Jump between tags using '%' *note if on the bracket it will just jump to
 "the opposite bracket*
