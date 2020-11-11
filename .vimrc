@@ -31,16 +31,11 @@ Plug 'powerline/fonts'
 "autoprefixer
 Plug 'vim-scripts/vim-autoprefixer'
 
-"Taboo - rename your tabs! (disabled due to conflict with airline)
-" Plug 'gcmt/taboo.vim'
-" set sessionoptions+=tabpages,globals
-" set guioptions-=e
-
 "COLORSCHEMES
-" Plug 'lifepillar/vim-solarized8'
-" Plug 'morhetz/gruvbox'
-" Plug 'tomasr/molokai'
 Plug 'flazz/vim-colorschemes'
+
+"COLOR HIGHLIGHTER HEX AND RGB COLOR DESIGNATIONS
+Plug 'ap/vim-css-color'
 
 "Better Javascript syntax highlighting
 " Plug 'pangloss/vim-javascript'
@@ -219,7 +214,8 @@ let g:netrw_ftp_cmd= "ftp -p"
 "GENERAL CUSTOMIZATIONS
 "
 "DEFAULT-COLORSCHEME
-colorscheme neuromancer
+" colorscheme neuromancer
+colorscheme ChocolateLiquor
 " colorscheme made_of_code-dark
 
 "START - Modifications for nerdcommenter plugin
