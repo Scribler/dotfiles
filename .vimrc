@@ -1,6 +1,7 @@
 "nbind space and remap it to mapleader
 let mapleader = " "
 
+autocmd BufReadPre,BufNewFile * let b:did_vim_sass_colors = 0
 
 "--------------------------------------------------------------------------
 "VIM PLUG
@@ -34,8 +35,14 @@ Plug 'vim-scripts/vim-autoprefixer'
 "COLORSCHEMES
 Plug 'flazz/vim-colorschemes'
 
-"COLOR HIGHLIGHTER HEX AND RGB COLOR DESIGNATIONS
+"Vim CSS Color Highlighting
+" Plug 'skammer/vim-css-color'
+
+"color highlighter: doesn't work with variables
 Plug 'ap/vim-css-color'
+
+"color highlighter: WORKS WITH VARIABLES
+" Plug 'shmargum/vim-sass-colors'
 
 "Better Javascript syntax highlighting
 " Plug 'pangloss/vim-javascript'
@@ -46,22 +53,17 @@ Plug 'sheerun/vim-polyglot'
 "autocomplete
 Plug 'ajh17/VimCompletesMe'
 
-"FTP stuff
-"?
-
 "Vim Color Picker
 Plug 'iandoe/vim-osx-colorpicker'
 let g:colorpicker_app = 'iTerm.app'
 
-"Vim CSS Color Highlighting
-" Plug 'skammer/vim-css-color'
-" let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 
 "End VIMPLUG
 call plug#end()
 
 
+" let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 "airline symbols
 let g:airline_powerline_fonts = 1
@@ -152,7 +154,7 @@ noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 "set redraw time longer to give time for syntax highlighting
-set redrawtime=10000
+" set redrawtime=10000
 
 "KEY REMAPS END
 "---------------------------------------------------------------------------
@@ -215,8 +217,14 @@ let g:netrw_ftp_cmd= "ftp -p"
 "
 "DEFAULT-COLORSCHEME
 " colorscheme neuromancer
-colorscheme ChocolateLiquor
+" colorscheme ChocolateLiquor
 " colorscheme made_of_code-dark
+" colorscheme radicalgoodspeed
+" colorscheme genericdc
+colorscheme quantum
+
+
+
 
 "START - Modifications for nerdcommenter plugin
 
