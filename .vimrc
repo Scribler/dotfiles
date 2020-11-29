@@ -116,9 +116,15 @@ if !exists('g:airline_symbols')
 
 "---------------------------------------------------------------------------
 "KEY REMAPS
+
 "remaps esc to 'kj' and stops the cursor from going back one space when you
 "exit insert mode.
 inoremap <silent>  kj <Esc>`^
+
+"remaps fast up and fast down(ctrl u, ctrl d) to (ctrl k, ctrl j) to prevent
+"accidental 'undo'
+nnoremap <C-k> <C-u>
+nnoremap <C-j> <C-d>
 
 " Go to tab by number
 noremap <leader>1 1gt
