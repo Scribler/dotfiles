@@ -227,7 +227,8 @@ let g:netrw_ftp_cmd= "ftp -p"
 " colorscheme made_of_code-dark
 " colorscheme radicalgoodspeed
 " colorscheme genericdc
-colorscheme quantum
+" colorscheme quantum
+colorscheme kalisi
 
 
 
