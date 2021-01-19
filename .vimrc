@@ -48,15 +48,29 @@ Plug 'ap/vim-css-color'
 " Plug 'pangloss/vim-javascript'
 
 "syntax highlighting and support for all languages
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 
 "autocomplete
 Plug 'ajh17/VimCompletesMe'
+autocmd FileType vim let b:vcm_tab_complete = 'vim'
+
+" htmlcompletion
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
 
 "Vim Color Picker
 Plug 'iandoe/vim-osx-colorpicker'
 let g:colorpicker_app = 'iTerm.app'
 
+"vim-emmet. Autocomplete for many things
+Plug 'mattn/emmet-vim'
+
+"youcompleteme everything completion
+" Plug 'Valloric/YouCompleteMe'
+
+"tabnine
+" Plug 'zxqfl/tabnine-vim'
 
 
 "End VIMPLUG
